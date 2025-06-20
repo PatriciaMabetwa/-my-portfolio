@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects | Patricia Mabetwa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-wx1K+fDZDQ+vXeN5UgGf3cSzozH57DmbtA96Rfn3eR4wI7vF3Aq06FVp+QL2B3t6+bBoVJ9Uj58zBv3Q0+zC3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    :root {
+      --primary: #8a2be2;
+      --accent: #00ffff;
+      --bg-dark: #000;
+      --bg-light: #111;
+      --text-light: #f5f1e9;
+      --text-soft: #d2b48c;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: var(--bg-light);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid var(--primary);
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      color: var(--text-soft);
+    }
+
+    nav a {
+      color: var(--accent);
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .project-card {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(138, 43, 226, 0.15);
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .project-card a {
+      display: inline-block;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+      transition: color 0.3s;
+    }
+
+    .project-card a:hover {
+      color: var(--primary);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: var(--bg-light);
+      font-size: 0.9rem;
+      border-top: 2px solid var(--primary);
+      color: var(--text-soft);
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Patricia Mabetwa</h1>
+    <nav>
+      <a href="portfolio.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="projects-grid">
+    <div class="project-card">
+      <img src="img/zoo.jpeg"/>
+      <a href="https://github.com/PatriciaMabetwa/1st-FNBApp-Academy" target="_blank">
+        <i class="fab fa-github"></i> View on GitHub
+      </a>
+    </div>
+
+    <div class="project-card">
+      <img src="img/cal.gif"/>
+      <a href="https://github.com/PatriciaMabetwa/my-calculator.FNBAppAcademy" target="_blank">
+        <i class="fab fa-github"></i> View on GitHub
+      </a>
+    </div>
+
+    <div class="project-card">
+      <img src="img/web-contact.png"/>
+      <a href="https://github.com/PatriciaMabetwa/contact-book" target="_blank">
+        <i class="fab fa-github"></i> View on GitHub
+      </a>
+    </div>
+
+    <div class="project-card">
+      <img src="img/reminder.jpg"/>
+      <a href="https://github.com/PatriciaMabetwa/edu-task-tracker" target="_blank">
+        <i class="fab fa-github"></i> View on GitHub
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Patricia Mabetwa | Built with 💻 + ☕ + 💡
+  </footer>
+
+</body>
+</html>
+
